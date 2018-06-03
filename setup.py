@@ -5,6 +5,9 @@ setup(name='funniest',
       description='The funniest joke in the world',
       url='http://github.com/angonyfox/funniestpy',
       scripts=['bin/joke'],
+      entry_points = {
+          'console_scripts': ['joke_cmd=funniest.joke_cmd:main'],
+      }
       author='Flying Circus',
       author_email='angonyfox@gmail.com',
       license='MIT',
